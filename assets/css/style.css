@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores:
+#262223 para a cabeçalho e menu
+#335AA6 degradado dos botoes
+#0CB1F2
+#05C7F2
+#59514D fundo do main
+#05C7F2 span
+#737373 sessoes
+#262626 fundo galeria
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+	margin: 3px;
+}
+
+header, nav, main, aside, footer {
+	background: #242021;
+	display: flex;
+	margin: 3px;
+}
+
+/* Seletores para formatação individual. */
+
+header {
+	height: 60px;
+	flex: 1 1 100vw;
+	padding: 5px 30px 5px 90px;
+	align-items: center;
+}
+
+
+
+#openMenu, #closeMenu {
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 200px;
+    color: white;
+}
+
+nav a {
+	margin: 0 3%;
+	font-size: 15pt;
+}
+
+.btn-orc {
+	background: linear-gradient(to right, #05C7F2, #0c7ff2, #335AA6);
+	color: white;
+	font-size: 1.5rem;
+	width: 160px;
+	height: 40px;
+	border: none;
+}
+
+.btn-forc {
+	background: linear-gradient(to right, #05C7F2, #0c7ff2, #335AA6);
+	color: white;
+	width: 200px;
+	height: 30px;
+	border: none;
+}
+
+main {
+    background-image: url("/assets/css/img/marvin-meyer-bfOQSDwEFg4-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: calc(100vh - 224px);
+	flex: 20 1 500px;
+	color: white;
+	display: block;
+}
+
+main section {
+	margin: 150px 100px;
+}
+main span {
+	color: #0c7ff2;
+}
+
+main h2 {
+	font-size: 2.5rem;
+}
+
+main h1 {
+	font-size: 5rem;
+}
+
+footer {
+	height: 100px;
+	flex: 1 1 100vw;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+article {
+    display: flex;
+	background-color: #898787;
+}
+
+.image-container {
+    flex: 0 1 400px; /* Para que la imagen no se estire */
+    margin: 100px; /* Espacio entre la imagen y el texto */
+}
+
+.image-container img {
+    max-width: 100%; /* Para asegurarse de que la imagen no se desborde */
+}
+
+.text-container {
+    flex: 1; /* Para que el texto ocupe el espacio restante */
+	margin-top: 100px;
+	color: white;
+}
+
+.text-container h2 {
+	font-size: 3rem;
+}
+
+.text-container h2 span {
+    font-size: 2.5rem;
+    margin-top: 0; /* Elimina el margen superior del título */
+	color: #0c7ff2
+}
+
+.text-container p {
+    margin: 10px 100px 10px 0; /* Elimina el margen superior de los párrafos */
+	text-justify: distribute;
+	font-size: 1.5rem;
+}
+
+article button {
+	margin-top: 10px;
+}
+
+.article-container {
+		background-image: linear-gradient(hsla(0, 0%, 100%, 0.123) 2px, transparent 1px),
+						  linear-gradient(90deg, hsla(0, 0%, 100%, 0.123) 2px, transparent 1px);
+		background-size: 100px 100px; /* Tamaño de las celdas de la grilla */
+}
+
+
+/* Altera o estilo dos elementos para serem apresentados */ 
+/* em telas menores que 717px. */
+@media only screen and (max-width: 717px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	header {
+		order: 0;
+	}
+
+	nav {
+		order: 1;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.8);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		margin: 3%;
+	}
+
+	main {
+		order: 2;
+		height: calc(100vh - 330px);
+	}
+
+	aside {
+		order: 3;
+		height: 100px;
+	}
+
+	footer {
+		order: 4;
+	}
+}
