@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="shortcut icon" href="css/imgs/logo.ico">
+    <title>Conheça nosso trabalho</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img src="css/imgs/logo.png" alt="Logo Inox concept">
+            </div>
+
+            <ul class="nav_link nav_link_menu">
+                <li class="nav_items">
+                    <a href="layout.html" class="nav_links">Home</a>
+                </li>
+                <li class="nav_items">
+                    <a href="layout.html#produtos" class="nav_links">Produtos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="layout.html#obras" class="nav_links">Obras</a>
+                </li>
+                <li class="nav_items">
+                    <a href="layout.html#contato" class="nav_links">Contato</a>
+                </li>
+
+                <img src="css/imgs/close.svg" class="nav_close" alt="Botão de fechar para telas reduzidas">
+            </ul>
+
+            <div class="nav_menu">
+                <img src="css/imgs/menu.svg" class="nav_img" alt="Menu hamburguer com tela reduzida">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="detail_container">
+            <div class="image-container">
+                <img id="selectedImage" src="css/imgs/alberto-castillo-q-mx4mSkK9zeo-unsplash.jpg" alt="Trabajo">
+            </div>
+            <div class="info-container">
+                <h2>Informações do Trabalho</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor sapien sit amet libero
+                    ullamcorper, nec ultricies libero scelerisque. Fusce sit amet volutpat ipsum.</p>
+                <button class="btn btn_forc" onclick="window.location.href='orcamento.html'">
+                    Fazer Orçamento
+                </button>
+                <div class="detail_gallery">
+                    <h3>Selecione uma imagem</h3>
+                    <div id="imageGallery" class="gallery-container"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="js/layout.js"></script>
+</body>
+
+</html>
