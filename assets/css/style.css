@@ -1,219 +1,267 @@
 @charset "UTF-8";
 
-/*
-Paleta de cores:
-#262223 para a cabeçalho e menu
-#335AA6 degradado dos botoes
-#0CB1F2
-#05C7F2
-#59514D fundo do main
-#05C7F2 span
-#737373 sessoes
-#262626 fundo galeria
-*/
+/* Reset de estilos */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos generales */
 body {
-	display: flex;
-	flex-wrap: wrap;
-	flex: 1 1 100vw;
-	margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    margin: 3px;
 }
 
 header, nav, main, aside, footer {
-	background: #242021;
-	display: flex;
-	margin: 3px;
+    background: #242021;
+    display: flex;
+    margin: 3px;
 }
 
-/* Seletores para formatação individual. */
-
+/* Estilos del encabezado */
 header {
-	height: 60px;
-	flex: 1 1 100vw;
-	padding: 5px 30px 5px 90px;
-	align-items: center;
+    height: 60px;
+    flex: 1 1 100vw;
+    padding: 5px 30px 5px 90px;
+    align-items: center;
 }
-
-
 
 #openMenu, #closeMenu {
-	border: none;
-	background: none;
-	font-size: 30px;
-	font-weight: bold;
-	padding: 0px 5px 0px 5px;
-	cursor: pointer;
-	display: none;
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
 }
 
 nav {
-	justify-content: center;
-	align-items: center;
-	flex: 1 1 200px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 200px;
     color: white;
 }
 
 nav a {
-	margin: 0 3%;
-	font-size: 15pt;
+    margin: 0 3%;
+    font-size: 15pt;
+}
+
+/* Estilos de los botones */
+.btn-orc, .btn-forc {
+    background: linear-gradient(to right, #05C7F2, #0c7ff2, #335AA6);
+    color: white;
+    border: none;
 }
 
 .btn-orc {
-	background: linear-gradient(to right, #05C7F2, #0c7ff2, #335AA6);
-	color: white;
-	font-size: 1.5rem;
-	width: 160px;
-	height: 40px;
-	border: none;
+    font-size: 1.5rem;
+    width: 160px;
+    height: 40px;
 }
 
 .btn-forc {
-	background: linear-gradient(to right, #05C7F2, #0c7ff2, #335AA6);
-	color: white;
-	width: 200px;
-	height: 30px;
-	border: none;
+    width: 200px;
+    height: 30px;
 }
 
+/* Estilos del contenido principal */
 main {
     background-image: url("/assets/css/img/marvin-meyer-bfOQSDwEFg4-unsplash.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-	height: calc(100vh - 224px);
-	flex: 20 1 500px;
-	color: white;
-	display: block;
+    height: calc(100vh - 224px);
+    flex: 20 1 500px;
+    color: white;
+    display: block;
 }
 
 main section {
-	margin: 150px 100px;
+    margin: 150px 100px;
 }
+
 main span {
-	color: #0c7ff2;
+    color: #0c7ff2;
 }
 
 main h2 {
-	font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 main h1 {
-	font-size: 5rem;
+    font-size: 5rem;
 }
 
-footer {
-	height: 100px;
-	flex: 1 1 100vw;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
+/* Estilos de los artículos */
 article {
     display: flex;
-	background-color: #898787;
+    background-color: #898787;
 }
 
 .image-container {
-    flex: 0 1 400px; /* Para que la imagen no se estire */
-    margin: 100px; /* Espacio entre la imagen y el texto */
+    flex: 0 1 400px;
+    margin: 100px;
 }
 
 .image-container img {
-    max-width: 100%; /* Para asegurarse de que la imagen no se desborde */
+    max-width: 100%;
 }
 
 .text-container {
-    flex: 1; /* Para que el texto ocupe el espacio restante */
-	margin-top: 100px;
-	color: white;
+    flex: 1;
+    margin-top: 100px;
+    color: white;
 }
 
 .text-container h2 {
-	font-size: 3rem;
+    font-size: 3rem;
 }
 
 .text-container h2 span {
     font-size: 2.5rem;
-    margin-top: 0; /* Elimina el margen superior del título */
-	color: #0c7ff2
+    margin-top: 0;
+    color: #0c7ff2
 }
 
 .text-container p {
-    margin: 10px 100px 10px 0; /* Elimina el margen superior de los párrafos */
-	text-justify: distribute;
-	font-size: 1.5rem;
+    margin: 10px 100px 10px 0;
+    text-justify: distribute;
+    font-size: 1.5rem;
 }
 
 article button {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
-.article-container {
-		background-image: linear-gradient(hsla(0, 0%, 100%, 0.123) 2px, transparent 1px),
-						  linear-gradient(90deg, hsla(0, 0%, 100%, 0.123) 2px, transparent 1px);
-		background-size: 100px 100px; /* Tamaño de las celdas de la grilla */
+/* Estilos de la presentación de diapositivas */
+/* Tu CSS existente aquí */
+
+/* Estilos de la presentación de diapositivas */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
 }
 
+.slide {
+    display: none;
+}
 
-/* Altera o estilo dos elementos para serem apresentados */ 
-/* em telas menores que 717px. */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slide img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+	border-radius: 10px;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Media query para pantallas pequeñas */
 @media only screen and (max-width: 717px) {
-	#openMenu, #closeMenu {
-		display: block;
-	}
+    #openMenu, #closeMenu {
+        display: block;
+    }
 
-	#openMenu {
-		margin-left: auto;
-	}
+    #openMenu {
+        margin-left: auto;
+    }
 
-	#closeMenu {
-		position: fixed;
-		right: 15px;
-		top: 15px;
-	}
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
 
-	header {
-		order: 0;
-	}
+    header {
+        order: 0;
+    }
 
-	nav {
-		order: 1;
-		position: fixed;
-		width: 100vw;
-		height: 100vh;
-		background: rgba(255, 255, 255, 0.8);
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-		display: none;
-		opacity: 0;
-		transition: 0.3s;
-	}
+    nav {
+        order: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
 
-	nav a {
-		margin: 3%;
-	}
+    nav a {
+        margin: 3%;
+    }
 
-	main {
-		order: 2;
-		height: calc(100vh - 330px);
-	}
+    main {
+        order: 2;
+        height: calc(100vh - 330px);
+    }
 
-	aside {
-		order: 3;
-		height: 100px;
-	}
+    aside {
+        order: 3;
+        height: 100px;
+    }
 
-	footer {
-		order: 4;
-	}
+    footer {
+        order: 4;
+    }
+
+    main section {
+        margin: 50px 20px;
+    }
+
+    main h1 {
+        font-size: 3.5rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    .image-container, .text-container {
+        margin: 50px 0;
+    }
+
+    .image-container {
+        margin: 0 auto;
+    }
+
+    .text-container p {
+        margin: 10px 20px;
+    }
+}
+
+/* Tu CSS existente aquí */
+
+/* Estilos del logo */
+#logo {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 717px) {
+    /* Tus estilos existentes para pantallas pequeñas aquí */
+}
+
+
+/* Estilos del pie de página */
+footer {
+    height: 100px;
+    flex: 1 1 100vw;
 }
