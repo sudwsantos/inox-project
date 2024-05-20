@@ -1,11 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inox concept</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="shortcut icon" href="css/imgs/logo.ico">
+    <title>Inox Concept</title>
 </head>
+
 <body>
-    
+    <!-- Header Section -->
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img src="css/imgs/logo.png" alt="Logo Inox concept">
+            </div>
+
+            <ul class="nav_link nav_link_menu">
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Home</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#produtos" class="nav_links">Produtos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#obras" class="nav_links">Obras</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#contato" class="nav_links">Contato</a>
+                </li>
+                <img src="css/imgs/close.svg" class="nav_close" alt="Botão de fechar para telas reduzidas">
+            </ul>
+            <button class="btn btn_orc" onclick="window.location.href='orcamento.html'">Orçamento</button>
+            <div class="nav_menu">
+                <img src="css/imgs/menu.svg" class="nav_img" alt="Menu hamburguer com tela reduzida">
+            </div>
+        </nav>
+
+        <section class="hero_container container">
+            <h2 class="hero_title"><span class="blue_letters">I</span>Alta qualidade</h2>
+            <h1 class="subtitle">Guarda corpo e <span class="blue_letters">corrimão</span></h1>
+            <p class="hero_paragrafo">A Inox concept é uma empresa do ramo de serralheria que está situada na <br>cidade
+                de Campinas/SP.</p>
+            <button class="btn btn_forc" onclick="window.location.href='orcamento.html'">Fazer orçamento</button>
+        </section>
+    </header>
+
+    <!-- About Us Section -->
+    <main>
+        <section class="about_us">
+            <figure class="about_img_container">
+                <img class="about_img" src="css/imgs/felix-fuchs-P21wf6KAykw-unsplash.jpg"
+                    alt="Escritório Inox Concept">
+            </figure>
+            <div class="about_container">
+                <h1 class="subtitle">Sobre <span class="blue_letters">Nós</span></h1>
+                <p class="about_text">Desde 2016, desempenho e qualidade são nossa marca registrada. Com uma equipe
+                    altamente qualificada e foco em inovação, transformamos espaços industriais, comerciais e
+                    residenciais em obras-primas de aço inoxidável e alumínio. O que nos diferencia? É o nosso
+                    comprometimento inabalável com cada serviço prestado aos nossos clientes.</p>
+                <br>
+                <button class="btn btn_forc" onclick="window.location.href='orcamento.html'">Fazer orçamento</button>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section>
+            <div class="services_container">
+                <h1 class="subtitle" id="produtos">Nossos <span class="blue_letters">serviços</span></h1>
+                <div class="slideshow-container">
+                    <!-- Slide 1 -->
+                    <div class="slide fade">
+                        <h2>Guarda Corpo de Vidro</h2>
+                        <div class="content">
+                            <img src="css/imgs/avi-werde-hHz4yrvxwlA-unsplash.jpg" class="foto"
+                                alt="Guarda Corpo de Vidro">
+                            <div class="text-icons">
+                                <p class="texto">Imagine uma vista deslumbrante, capturada em cada detalhe do seu
+                                    espaço. Nosso serviço de guarda corpo em vidro para clientes de alto padrão e
+                                    construtoras oferece não apenas segurança, mas uma experiência visual incomparável.
+                                    Com designs exclusivos e materiais de primeira linha, elevamos o conceito de
+                                    elegância e modernidade. Deixe-nos moldar o seu ambiente com transparência e
+                                    sofisticação, onde cada linha e cada brilho refletem o requinte que você merece.</p>
+                                <div class="icons">
+                                    <div class="icon-item">
+                                        <img src="css/imgs/certificado.svg" alt="Qualidade garantida">
+                                        <h3>Qualidade <br> garantida</h3>
+                                    </div>
+                                    <div class="icon-item">
+                                        <img src="css/imgs/raio.svg" alt="Rápida instalação">
+                                        <h3>Rápida <br> instalação</h3>
+                                    </div>
+                                    <div class="icon-item">
+                                        <img src="css/imgs/ladrillos.png" alt="Materiais resistentes">
+                                        <h3>Materiais <br> resistentes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide fade">
+                        <h2>Guarda Corpo em Inox</h2>
+                        <div class="content">
+                            <img src="css/imgs/alberto-castillo-q-mx4mSkK9zeo-unsplash.jpg" class="foto"
+                                alt="Guarda Corpo de Inox">
+                            <div class="text-icons">
+                                <p class="texto">Imagine uma vista deslumbrante, capturada em cada detalhe do seu
+                                    espaço. Nosso serviço de guarda corpo em inox para clientes de alto padrão e
+                                    construtoras oferece não apenas segurança, mas uma experiência visual incomparável.
+                                    Com designs exclusivos e materiais de primeira linha, elevamos o conceito de
+                                    elegância e modernidade. Deixe-nos moldar o seu ambiente com transparência e
+                                    sofisticação, onde cada linha e cada brilho refletem o requinte que você merece.</p>
+                                <div class="icons">
+                                    <div class="icon-item">
+                                        <img src="css/imgs/certificado.svg" alt="Qualidade garantida">
+                                        <h3>Qualidade <br> garantida</h3>
+                                    </div>
+                                    <div class="icon-item">
+                                        <img src="css/imgs/raio.svg" alt="Rápida instalação">
+                                        <h3>Rápida <br> instalação</h3>
+                                    </div>
+                                    <div class="icon-item">
+                                        <img src="css/imgs/ladrillos.png" alt="Materiais resistentes">
+                                        <h3>Materiais <br> resistentes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide fade">
+                        <h2>Corrimão em Inox</h2>
+                        <div class="content">
+                            <img src="css/imgs/john-fornander-tVzyDSV84w8-unsplash.jpg" class="foto"
+                                alt="Corrimão em Inox">
+                            <div class="text-icons">
+                                <p class="texto">Imagine uma vista deslumbrante, capturada em cada detalhe do seu
+                                    espaço. Nosso serviço de corrimão em inox para clientes de alto padrão e
+                                    construtoras oferece não apenas segurança, mas uma experiência visual incomparável.
+                                    Com designs exclusivos e materiais de primeira linha, elevamos o conceito de
+                                    elegância e modernidade. Deixe-nos moldar o seu ambiente com transparência e
+                                    sofisticação, onde cada linha e cada brilho refletem o requinte que você merece.</p>
+                                <div class="icons">
+                                    <div class="icon-item">
+                                        <img src="css/imgs/certificado.svg" alt="Qualidade garantida">
+                                        <h3>Qualidade <br> garantida</h3>
+                                    </div>
+                                    <div class="icon-item">
+                                        <img src="css/imgs/raio.svg" alt="Rápida instalação">
+                                        <h3>Rápida <br> instalação</h3>
+                                    </div>
+                                    <div class="icon-item">
+                                        <img src="css/imgs/ladrillos.png" alt="Materiais resistentes">
+                                        <h3>Materiais <br> resistentes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Gallery Section -->
+<section>
+    <div class="aside_title">
+        <h1 class="subtitle" id="obras">Obras <span class="blue_letters">Concluídas</span></h1>
+    </div>
+    <aside>
+        <div class="galery_container">
+            <img src="css/imgs/alberto-castillo-q-mx4mSkK9zeo-unsplash.jpg" alt="Obra 1">
+            <div class="info-top">
+                <h3>Obra 1</h3>
+                <a href="detail.html">Ver mais</a>
+            </div>
+            <div class="info-bottom">
+                <h3>
+                    <img src="css/imgs/map.svg" alt="Location"> Sumaré
+                </h3>
+                <h3>10.000 <img src="css/imgs/m2.svg" alt="Square meters"></h3>
+            </div>
+        </div>
+        <div class="galery_container">
+            <img src="css/imgs/avi-werde-hHz4yrvxwlA-unsplash.jpg" alt="Obra 2">
+            <div class="info-top">
+                <h3>Obra 2</h3>
+                <a href="detail.html">Ver mais</a>
+            </div>
+            <div class="info-bottom">
+                <h3>
+                    <img src="css/imgs/map.svg" alt="Location"> Campinas
+                </h3>
+                <h3>8.000 <img src="css/imgs/m2.svg" alt="Square meters"></h3>
+            </div>
+        </div>
+
+        <div class="galery_container">
+            <img src="css/imgs/john-fornander-tVzyDSV84w8-unsplash.jpg" alt="Obra 2">
+            <div class="info-top">
+                <h3>Obra 2</h3>
+                <a href="detail.html">Ver mais</a>
+            </div>
+            <div class="info-bottom">
+                <h3>
+                    <img src="css/imgs/map.svg" alt="Location"> Hortoländia
+                </h3>
+                <h3>12.000 <img src="css/imgs/m2.svg" alt="Square meters"></h3>
+            </div>
+        </div>
+
+        <div class="galery_container">
+            <img src="css/imgs/marvin-meyer-cjhuXRtRT0Y-unsplash.jpg" alt="Obra 2">
+            <div class="info-top">
+                <h3>Obra 2</h3>
+                <a href="detail.html">Ver mais</a>
+            </div>
+            <div class="info-bottom">
+                <h3>
+                    <img src="css/imgs/map.svg" alt="Location"> Americana
+                </h3>
+                <h3>11.000 <img src="css/imgs/m2.svg" alt="Square meters"></h3>
+            </div>
+        </div>
+        
+    </aside>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content" id="contato">
+        <div class="contact-details">
+            <h1>Entre em <span class="blue_letters">contato</span></h1>
+            <br><br>
+            <div class="contact-item">
+                <img src="css/imgs/map.svg" alt="Location">
+                <h3>
+                    <span class="blue_letters">Endereço</span><br>
+                    Rua Joáo Marino da Silva, Campinas SP<br>
+                    Cep 1234567
+                </h3>
+            </div>
+            <div class="contact-item">
+                <img src="css/imgs/telefone.svg" alt="Telefone">
+                <h3>
+                    <span class="blue_letters">Whatsapp</span><br>
+                    (19) 98752-3695
+                </h3>
+            </div>
+            <div class="contact-item">
+                <img src="css/imgs/instagram.svg" alt="Instagram">
+                <h3>
+                    <span class="blue_letters">Instagram</span><br>
+                    @seunickinsta
+                </h3>
+            </div>
+        </div>
+        <div class="map-container">
+            <img src="css/imgs/maps.jpg" alt="Mapa">
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/layout.js"></script>
 </body>
 </html>
